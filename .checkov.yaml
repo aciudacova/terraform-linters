@@ -1,0 +1,11 @@
+skip-check:
+  "CKV_AWS_21":
+    - "aws_s3_bucket.my_legacy_bucket"
+
+  "CKV_AWS_18":
+    - "aws_security_group.allow_all_ssh"
+    - "aws_security_group.allow_all_rdp"
+
+check:
+  "CKV_AWS_126":
+    - "suppress"
